@@ -27,6 +27,7 @@ module.exports = {
         bgpurplelight3: "#34364B3D",
         bgpurplelight4: "#575BC74D",
         bgpurplelight5: "#45475C",
+        bgpurplelight6: "#575BC733",
         transparentbg: "#FFFFFF12",
         transparentbg2: "#FFFFFF1A",
         lightwhite: "#D2D3E0",

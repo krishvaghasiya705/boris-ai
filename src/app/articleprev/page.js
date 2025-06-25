@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import articleimage1 from "@/assets/image/articleimage1.png"
 import articleimage2 from "@/assets/image/articleimage2.png"
+import Link from 'next/link'
 
 export default function Articleprev() {
   return (
@@ -28,7 +29,9 @@ export default function Articleprev() {
               <button type='button' className='py-2.5 px-5 bg-transparent border-[1px] border-solid border-borderpurplelight8 rounded text-sm leading-[17px] font-medium font-Montserrat text-lightwhite10'>#Lifestyle</button>
               <button type='button' className='py-2.5 px-5 bg-transparent border-[1px] border-solid border-borderpurplelight8 rounded text-sm leading-[17px] font-medium font-Montserrat text-lightwhite10'>#Learning</button>
             </div>
-            <button type="submit" className='bg-btnblue border-[1px] border-solid border-btnblue rounded-md py-[14px] px-[42px] cursor-pointer text-[16px] leading-5 font-semibold font-Montserrat text-white'>Publish</button>
+            <Link href={"/articledetails"}>
+              <button type="submit" className='bg-btnblue border-[1px] border-solid border-btnblue rounded-md py-[14px] px-[42px] cursor-pointer text-[16px] leading-5 font-semibold font-Montserrat text-white'>Publish</button>
+            </Link>
         </div>
     </div>
   )
