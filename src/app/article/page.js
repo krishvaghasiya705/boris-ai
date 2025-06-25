@@ -4,6 +4,7 @@ import Searchicon from "@/assets/icon/searchicon";
 import Staricon from "@/assets/icon/staricon";
 import Threedoticon from "@/assets/icon/threedoticon";
 import Pagination from "@/components/pagination";
+import Link from "next/link";
 import React from "react";
 
 export default function Article() {
@@ -15,12 +16,14 @@ export default function Article() {
             Article
           </h1>
           <div className="flex items-center gap-[22px]">
-            <div className="bg-bgpurplelight2 border-borderpurplelight2 border-[1px] border-solid rounded-md flex items-center gap-2 py-2.5 px-4 cursor-pointer">
-              <Addarticleicon />
-              <span className="text-base leading-5 font-medium text-lightwhite font-Montserrat">
-                Add Article
-              </span>
-            </div>
+            <Link href={"/addarticle"}>
+              <div className="bg-bgpurplelight2 border-borderpurplelight2 border-[1px] border-solid rounded-md flex items-center gap-2 py-2.5 px-4 cursor-pointer">
+                <Addarticleicon />
+                <span className="text-base leading-5 font-medium text-lightwhite font-Montserrat">
+                  Add Article
+                </span>
+              </div>
+            </Link>
             <div className="relative">
               <input
                 type="text"
@@ -267,7 +270,7 @@ export default function Article() {
           </table>
         </div>
       </div>
-      <Pagination />
+      <Pagination paginationstyle="px-[60px]" />
     </div>
   );
 }

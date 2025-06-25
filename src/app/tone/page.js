@@ -151,7 +151,7 @@ export default function Tone() {
           </table>
         </div>
       </div>
-      <Pagination />
+      <Pagination paginationstyle="px-[60px]" />
       {showModal && <Addtonemodal onClose={() => setShowModal(false)} />}
     </div>
   )

@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2C2D3C;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #D2D3E0;
 }
