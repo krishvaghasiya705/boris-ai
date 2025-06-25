@@ -5,6 +5,7 @@ import Dropdownarrow from '@/assets/icon/dropdownarrow'
 import Nodataicon from '@/assets/icon/nodataicon'
 import React, { useState } from 'react'
 import Arrowcircleright from '../../assets/icon/arrowcircleright';
+import Link from "next/link";
 
 export default function Addarticle() {
     const [toneDropdownOpen, setToneDropdownOpen] = useState(false);
@@ -129,10 +130,10 @@ export default function Addarticle() {
                 <h2 className='text-3xl leading-[37px] font-semibold font-Montserrat text-lightwhite mb-[50px]'>Select Title</h2>
                 {/* <h3 className='text-3xl leading-[37px] font-semibold font-Montserrat text-lightwhite mb-[50px]'>Select Suggest Topic</h3> */}
                 <div className='h-[calc(100vh-200px)] w-full overflow-y-auto'>
-                    <div className='h-full flex justify-center items-center flex-col gap-5'>
+                    {/* <div className='h-full flex justify-center items-center flex-col gap-5'>
                         <Nodataicon />
                         <span className="text-lg leading-[22px] font-medium font-Montserrat text-bgpurplelight5">No Title Found</span>
-                    </div>
+                    </div> */}
                     {/* <div className='grid grid-cols-2 gap-x-[35px] gap-y-[30px]'>
                         <div className="bg-bgblack4 border-[1px] border-solid border-borderpurplelight6 p-6 rounded-md flex flex-col items-start gap-9 cursor-pointer">
                             <p className="text-lg leading-7 font-medium font-Montserrat text-lightwhite">How AI is Reshaping the Future of UX Design.</p>
@@ -165,22 +166,26 @@ export default function Addarticle() {
                             </div>
                         </div>
                     </div> */}
-                    {/* <div className="flex flex-col gap-[25px]">
+                    <div className="flex flex-col gap-[25px]">
                         <div className="bg-bgblack4 border-[1px] border-solid border-borderpurplelight6 p-5 rounded-md">
                             <h6 className="text-lg leading-7 font-semibold font-Montserrat text-lightwhite mb-3">How AI is Reshaping the Future of UX Design.</h6>
                             <p className="text-base leading-7 font-medium font-Montserrat text-lightwhite5 mb-3">Artificial Intelligence (AI) is revolutionizing the way we approach User Experience (UX) design, blending creativity with cutting-edge technology. This transformation is enabling designers to create more intuitive, personalized, and efficient interfaces than ever before.</p>
                             <p className="text-base leading-7 font-medium font-Montserrat text-lightwhite5 mb-3">One of AI's biggest contributions to UX is personalization. By analyzing user data, AI algorithms can predict preferences and deliver tailored experiences. example, e-commerce platforms use AI to suggest products based on browsing history, making interactions seamless and engaging.</p>
                             <p className="text-base leading-7 font-medium font-Montserrat text-lightwhite5 mb-3">AI is also streamlining the design process. Tools like Adobe Sensei and Figma’s AI integrations automate repetitive tasks such as generating design variations or resizing elements, allowing designers to focus on innovation and problem-solving.</p>
-                            <button type="button" className="bg-btnblue border-[1px] border-solid border-btnblue rounded-md py-[14px] px-[18px] cursor-pointer text-[14px] leading-[17px] font-semibold font-Montserrat text-white mt-[30px]">Generate Article</button>
+                            <Link href={"/articleprev"}>
+                                <button type="button" className="bg-btnblue border-[1px] border-solid border-btnblue rounded-md py-[14px] px-[18px] cursor-pointer text-[14px] leading-[17px] font-semibold font-Montserrat text-white mt-[30px]">Generate Article</button>
+                            </Link>
                         </div>
                         <div className="bg-bgblack4 border-[1px] border-solid border-borderpurplelight6 p-5 rounded-md">
                             <h6 className="text-lg leading-7 font-semibold font-Montserrat text-lightwhite mb-3">How AI is Reshaping the Future of UX Design.</h6>
                             <p className="text-base leading-7 font-medium font-Montserrat text-lightwhite5 mb-3">Artificial Intelligence (AI) is revolutionizing the way we approach User Experience (UX) design, blending creativity with cutting-edge technology. This transformation is enabling designers to create more intuitive, personalized, and efficient interfaces than ever before.</p>
                             <p className="text-base leading-7 font-medium font-Montserrat text-lightwhite5 mb-3">One of AI's biggest contributions to UX is personalization. By analyzing user data, AI algorithms can predict preferences and deliver tailored experiences. example, e-commerce platforms use AI to suggest products based on browsing history, making interactions seamless and engaging.</p>
                             <p className="text-base leading-7 font-medium font-Montserrat text-lightwhite5 mb-3">AI is also streamlining the design process. Tools like Adobe Sensei and Figma’s AI integrations automate repetitive tasks such as generating design variations or resizing elements, allowing designers to focus on innovation and problem-solving.</p>
-                            <button type="button" className="bg-btnblue border-[1px] border-solid border-btnblue rounded-md py-[14px] px-[18px] cursor-pointer text-[14px] leading-[17px] font-semibold font-Montserrat text-white mt-[30px]">Generate Article</button>
+                            <Link href={"/articleprev"}>
+                                <button type="button" className="bg-btnblue border-[1px] border-solid border-btnblue rounded-md py-[14px] px-[18px] cursor-pointer text-[14px] leading-[17px] font-semibold font-Montserrat text-white mt-[30px]">Generate Article</button>
+                            </Link>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
